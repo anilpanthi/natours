@@ -4,7 +4,7 @@
   "description": "Landing Page for Natours",
   "main": "index.js",
   "scripts": {
-    "build-sass": "sass sass/main.scss css/style.css ",
+    "build-sass": "sass sass/main.scss css/main.css -w",
     "build-live": "sass --watch sass:css"
   },
   "author": "",
