@@ -1,4 +1,5 @@
 @use "../abstracts/variables"as *;
+
 .btn {
 
     &:link,
@@ -8,11 +9,12 @@
         display: inline-block;
         transition: all .2s;
         position: relative;
+        border-radius: 10rem;
     }
 
     &:hover {
         transform: translateY(-3px);
-        box-shadow: 0 10px 20px rgba($color-balck, 0.2);
+        box-shadow: 0 10px 20px rgba($color-black, 0.2);
 
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
@@ -22,7 +24,7 @@
 
     &:active {
         transform: translateY(-1px);
-        box-shadow: 0 5px 10px rgba($color-balck, 0.2);
+        box-shadow: 0 5px 10px rgba($color-black, 0.2);
     }
 
     &-white {
@@ -52,6 +54,33 @@
         z-index: -1;
         transition: all .4s;
 
+    }
+
+}
+
+.btn-text {
+
+    &:link,
+    &:visited {
+        font-size: 1.6rem;
+        display: inline-block;
+        color: $color-primary;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+    
+    &:active{
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
     }
 
 }
